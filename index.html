@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Memondo Comments</title>
+    </head>
+    <body>
+        <div class="pagewidth">
+            <h1>Memondo Comments - HTML/CSS/JS example</h1>
+            <ul class="comment-list" data-next-comment="10">
+                <li id="comment-1" class="comment high" data-id="1" data-parent="0">
+                    <div class="comment-lcol">
+                        <a class="user-avatar" href="">
+                            <img src="img/v_jimmy_256x256.jpg" alt="">
+                        </a>
+                        <div class="comment-score">
+                            <button class="btn btn-score-up"><i class="cicon-triangle-up"></i></button>
+                            <span class="num">45</span>
+                            <button class="btn btn-score-down"><i class="cicon-triangle-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="comment-rcol">
+                        <div class="comment-header">
+                            <a class="comment-id" href="">#1</a>
+                            <a class="user-name" href="">Jimmy</a>
+                            <span class="comment-date">on March 2, 2016 at 17:29</span>
+                        </div>
+                        <div class="comment-content">
+                            <p>Well, that's America for ya. No, no, really, that's fascinating. Vamos the car, amigo! Sorry, lady! Nothing personal. I know, I know, it ain't fuckin' cool! You are out of control!</p>
+                            <p>I ain't got time to swap details, asshole! Next time you'll listen. Well, you know what I mean! Hey, I'm serious. Get lost. You need receipt? For taxes? Might as well get the body bag, bro.</p>
+                        </div>
+                        <div class="comment-footer">
+                            <div class="comment-footer-left">
+                                <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                            </div>
+                            <div class="comment-footer-right">
+                                <button class="btn btn-show-replies"><i class="cicon-replies"></i><span>3 replies</span></button>
+                                <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="comment-2" class="comment high" data-id="2" data-parent="0">
+                    <div class="comment-lcol">
+                        <a class="user-avatar" href="">
+                            <img src="img/v_tracey_256x256.jpg" alt="">
+                        </a>
+                        <div class="comment-score">
+                            <button class="btn btn-score-up"><i class="cicon-triangle-up"></i></button>
+                            <span class="num">22</span>
+                            <button class="btn btn-score-down"><i class="cicon-triangle-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="comment-rcol">
+                        <div class="comment-header">
+                            <a class="comment-id" href="">#2</a>
+                            <a class="user-name" href="">Tracey</a>
+                            <span class="comment-date">on March 2, 2016 at 19:31</span>
+                        </div>
+                        <div class="comment-content">
+                            <p>Who's got eyes??!! </p>
+                            <p>Are you following me, kid? </p>
+                        </div>
+                        <div class="comment-footer">
+                            <div class="comment-footer-left">
+                                <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                            </div>
+                            <div class="comment-footer-right">
+                                <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="comment-3" class="comment" data-id="3" data-parent="1">
+                    <div class="comment-lcol">
+                        <a class="user-avatar" href="">
+                            <img src="img/v_amanda_256x256.jpg" alt="">
+                        </a>
+                        <div class="comment-score">
+                            <button class="btn btn-score-up"><i class="cicon-triangle-up"></i></button>
+                            <span class="num">2</span>
+                            <button class="btn btn-score-down"><i class="cicon-triangle-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="comment-rcol">
+                        <div class="comment-header">
+                            <a class="comment-id" href="">#3</a>
+                            <a class="user-name" href="">Amanda</a>
+                            <span class="label label-moderator">MODERATOR</span>
+                            <span class="comment-date">on March 2, 2016 at 17:41</span>
+                        </div>
+                        <div class="comment-content">
+                            <p><a href="">#1 @jimmy</a> This is U.S. military airspace. Divert now, or face the consequences.</p>
+                            <p>Sir, leave the area now! This is for authorised personnel only. Drop the weapon! Oh shit, they got Charlie!</p>
+                        </div>
+                        <div class="comment-footer">
+                            <div class="comment-footer-left">
+                                <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                            </div>
+                            <div class="comment-footer-right">
+                                <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="comment-4" class="comment" data-id="4" data-parent="1">
+                    <div class="comment-lcol">
+                        <a class="user-avatar" href="">
+                            <img src="img/v_michael_jetski_256x256.jpg" alt="">
+                        </a>
+                        <div class="comment-score">
+                            <button class="btn btn-score-up"><i class="cicon-triangle-up"></i></button>
+                            <span class="num">17</span>
+                            <button class="btn btn-score-down"><i class="cicon-triangle-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="comment-rcol">
+                        <div class="comment-header">
+                            <a class="comment-id" href="">#4</a>
+                            <a class="user-name" href="">Michael</a>
+                            <span class="comment-date">on March 2, 2016 at 17:52</span>
+                        </div>
+                        <div class="comment-content">
+                            <p><a href="">#1 @jimmy</a> Arrgh, Jesus! This, was a nice car! You should get some help with that personality of yours!</p>
+                        </div>
+                        <div class="comment-footer">
+                            <div class="comment-footer-left">
+                                <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                            </div>
+                            <div class="comment-footer-right">
+                                <button class="btn btn-show-replies"><i class="cicon-replies"></i><span>1 reply</span></button>
+                                <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="comment-5" class="comment" data-id="5" data-parent="4">
+                    <div class="comment-lcol">
+                        <a class="user-avatar" href="">
+                            <img src="img/v_jimmy_256x256.jpg" alt="">
+                        </a>
+                        <div class="comment-score">
+                            <button class="btn btn-score-up"><i class="cicon-triangle-up"></i></button>
+                            <span class="num">-1</span>
+                            <button class="btn btn-score-down"><i class="cicon-triangle-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="comment-rcol">
+                        <div class="comment-header">
+                            <a class="comment-id" href="">#5</a>
+                            <a class="user-name" href="">Jimmy</a>
+                            <span class="comment-date">on March 2, 2016 at 17:55</span>
+                        </div>
+                        <div class="comment-content">
+                            <p><a href="">#4 @michael</a> Eh, you keep on going dawg, you hear me? And people say I'm a disgrace to society? You punk-ass bitches is done, now! </p>
+                        </div>
+                        <div class="comment-footer">
+                            <div class="comment-footer-left">
+                                <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                            </div>
+                            <div class="comment-footer-right">
+                                <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="comment-6" class="comment" data-id="6" data-parent="1">
+                    <div class="comment-lcol">
+                        <a class="user-avatar" href="">
+                            <img src="img/v_michael_jetski_256x256.jpg" alt="">
+                        </a>
+                        <div class="comment-score">
+                            <button class="btn btn-score-up"><i class="cicon-triangle-up"></i></button>
+                            <span class="num">0</span>
+                            <button class="btn btn-score-down"><i class="cicon-triangle-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="comment-rcol">
+                        <div class="comment-header">
+                            <a class="comment-id" href="">#6</a>
+                            <a class="user-name" href="">Michael</a>
+                            <span class="comment-date">on March 2, 2016 at 17:57</span>
+                        </div>
+                        <div class="comment-content">
+                            <p><a href="">#1 @jimmy</a> Jimbo! I love you, son. What's up, amigo? What's going on, <a href="">@tracey</a>? </p>
+                        </div>
+                        <div class="comment-footer">
+                            <div class="comment-footer-left">
+                                <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                            </div>
+                            <div class="comment-footer-right">
+                                <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="comment-7" class="comment" data-id="7" data-parent="0">
+                    <div class="comment-lcol">
+                        <a class="user-avatar" href="">
+                            <img src="img/v_hunt_f_256x256.jpg" alt="">
+                        </a>
+                        <div class="comment-score">
+                            <button class="btn btn-score-up"><i class="cicon-triangle-up"></i></button>
+                            <span class="num">8</span>
+                            <button class="btn btn-score-down"><i class="cicon-triangle-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="comment-rcol">
+                        <div class="comment-header">
+                            <a class="comment-id" href="">#7</a>
+                            <a class="user-name" href="">Franklin</a>
+                            <span class="label label-admin">ADMIN</span>
+                            <span class="comment-date">on March 2, 2016 at 18:01</span>
+                        </div>
+                        <div class="comment-content">
+                            <p>Man, your genetic experiment gone wrong, dawg!</p>
+                        </div>
+                        <div class="comment-footer">
+                            <div class="comment-footer-left">
+                                <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                            </div>
+                            <div class="comment-footer-right">
+                                <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="comment-8" class="comment low" data-id="8" data-parent="0">
+                    <div class="comment-lcol">
+                        <a class="user-avatar" href="">
+                            <img src="img/v_trevor_atv_256x256.jpg" alt="">
+                        </a>
+                        <div class="comment-score">
+                            <button class="btn btn-score-up"><i class="cicon-triangle-up"></i></button>
+                            <span class="num">-22</span>
+                            <button class="btn btn-score-down"><i class="cicon-triangle-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="comment-rcol">
+                        <div class="comment-header">
+                            <a class="comment-id" href="">#8</a>
+                            <a class="user-name" href="">Trevor</a>
+                            <span class="comment-date">on March 2, 2016 at 18:12</span>
+                        </div>
+                        <div class="comment-content">
+                            <p>Wanna hunt?</p>
+                            <img src="img/gta-v.jpg" />
+                            <p>How have you beeeeeeeeeen, <a href="">@amanda</a>? Wow... you are BIG! I mean, you're the size of a house!</p>
+                        </div>
+                        <div class="comment-footer">
+                            <div class="comment-footer-left">
+                                <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                            </div>
+                            <div class="comment-footer-right">
+                                <button class="btn btn-show-replies"><i class="cicon-replies"></i><span>1 reply</span></button>
+                                <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="comment-9" class="comment" data-id="9" data-parent="8">
+                    <div class="comment-lcol">
+                        <a class="user-avatar" href="">
+                            <img src="img/v_frisk_me_256x256.jpg" alt="">
+                        </a>
+                        <div class="comment-score">
+                            <button class="btn btn-score-up"><i class="cicon-triangle-up"></i></button>
+                            <span class="num">19</span>
+                            <button class="btn btn-score-down"><i class="cicon-triangle-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="comment-rcol">
+                        <div class="comment-header">
+                            <a class="comment-id" href="">#9</a>
+                            <a class="user-name" href="">UnknownGirl89</a>
+                            <span class="comment-date">on March 2, 2016 at 18:12</span>
+                        </div>
+                        <div class="comment-content">
+                            <p><a href="">#8 @trevor</a> Can I join?</p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/W35XSzAJz2I" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="comment-footer">
+                            <div class="comment-footer-left">
+                                <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                            </div>
+                            <div class="comment-footer-right">
+                                <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="new-comment comment">
+                    <div class="comment-lcol">
+                        <a class="user-avatar" href="">
+                            <!-- Firefox can't display dashed borders on rounded elements. -->
+                            <!-- Read: https://bugzilla.mozilla.org/show_bug.cgi?id=382721 -->
+                            <object class="larger-screens" type="image/svg+xml" data="data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg'><circle cy='40' cx='40' r='38' style='fill:rgb(255, 255, 255);stroke-width:1;stroke-opacity:1;stroke:rgb(214, 214, 214);stroke-dasharray:4;' /></svg>"></object>
+                            <img src="img/v_heists_balaclava_256x256.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="comment-rcol">
+                        <div class="anonymous-user">
+                            <div class="join">Join the conversation!</div>
+                            <div>
+                                <a class="btn btn-sign-up" href="">New user account</a>
+                            </div>
+                            <div>
+                                <p>Already registered?</p>
+                                <a class="btn btn-sign-up" href="">Sign in</a>
+                            </div>
+                        </div>
+                        <div class="registered-user">
+                            <div class="comment-header">
+                                <a class="comment-id" href=""></a>
+                                <a class="user-name" href="">UnknownGuy84</a>
+                                <span class="comment-date"></span>
+                            </div>
+                            <div class="comment-content">
+                                <form name="comment-form" method="post" action="">
+                                    <textarea name="comment" placeholder="Write your comment here..."></textarea>
+                                    <div class="submit-feedback"></div>
+                                    <div class="comment-actions">
+                                        <button type="submit" class="btn">POST COMMENT</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="col1">
+                <h1>Variation 1</h1>
+                <ul id="variation-1" class="comment-list" data-next-comment="10">
+                    <li id="comment-1" class="comment high" data-id="1" data-parent="0">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_jimmy_256x256.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="comment-header">
+                                <a class="comment-id" href="">#1</a>
+                                <a class="user-name" href="">Jimmy</a>
+                                <span class="comment-date">on March 2, 2016 at 17:29</span>
+                            </div>
+                            <div class="comment-content">
+                                <p>Well, that's America for ya. No, no, really, that's fascinating. Vamos the car, amigo! Sorry, lady! Nothing personal. I know, I know, it ain't fuckin' cool! You are out of control!</p>
+                                <p>I ain't got time to swap details, asshole! Next time you'll listen. Well, you know what I mean! Hey, I'm serious. Get lost. You need receipt? For taxes? Might as well get the body bag, bro.</p>
+                            </div>
+                            <div class="comment-footer">
+                                <div class="comment-footer-left">
+                                    <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                                </div>
+                                <div class="comment-footer-right">
+                                    <div class="comment-score">
+                                        <button class="btn btn-score-up"><i class="cicon-thumbs-up"></i></button>
+                                        <span class="num">45</span>
+                                        <button class="btn btn-score-down"><i class="cicon-thumbs-down"></i></button>
+                                    </div>
+                                    <button class="btn btn-show-replies"><i class="cicon-replies"></i><span>3 replies</span></button>
+                                    <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="comment-2" class="comment high" data-id="2" data-parent="0">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_tracey_256x256.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="comment-header">
+                                <a class="comment-id" href="">#2</a>
+                                <a class="user-name" href="">Tracey</a>
+                                <span class="comment-date">on March 2, 2016 at 19:31</span>
+                            </div>
+                            <div class="comment-content">
+                                <p>Who's got eyes??!! </p>
+                                <p>Are you following me, kid? </p>
+                            </div>
+                            <div class="comment-footer">
+                                <div class="comment-footer-left">
+                                    <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                                </div>
+                                <div class="comment-footer-right">
+                                    <div class="comment-score">
+                                        <button class="btn btn-score-up"><i class="cicon-thumbs-up"></i></button>
+                                        <span class="num">22</span>
+                                        <button class="btn btn-score-down"><i class="cicon-thumbs-down"></i></button>
+                                    </div>
+                                    <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="comment-3" class="comment" data-id="3" data-parent="1">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_amanda_256x256.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="comment-header">
+                                <a class="comment-id" href="">#3</a>
+                                <a class="user-name" href="">Amanda</a>
+                                <span class="label label-moderator">MODERATOR</span>
+                                <span class="comment-date">on March 2, 2016 at 17:41</span>
+                            </div>
+                            <div class="comment-content">
+                                <p><a href="">#1 @jimmy</a> This is U.S. military airspace. Divert now, or face the consequences.</p>
+                                <p>Sir, leave the area now! This is for authorised personnel only. Drop the weapon! Oh shit, they got Charlie!</p>
+                            </div>
+                            <div class="comment-footer">
+                                <div class="comment-footer-left">
+                                    <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                                </div>
+                                <div class="comment-footer-right">
+                                    <div class="comment-score">
+                                        <button class="btn btn-score-up"><i class="cicon-thumbs-up"></i></button>
+                                        <span class="num">2</span>
+                                        <button class="btn btn-score-down"><i class="cicon-thumbs-down"></i></button>
+                                    </div>
+                                    <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="comment-4" class="comment" data-id="4" data-parent="1">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_michael_jetski_256x256.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="comment-header">
+                                <a class="comment-id" href="">#4</a>
+                                <a class="user-name" href="">Michael</a>
+                                <span class="comment-date">on March 2, 2016 at 17:52</span>
+                            </div>
+                            <div class="comment-content">
+                                <p><a href="">#1 @jimmy</a> Arrgh, Jesus! This, was a nice car! You should get some help with that personality of yours!</p>
+                            </div>
+                            <div class="comment-footer">
+                                <div class="comment-footer-left">
+                                    <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                                </div>
+                                <div class="comment-footer-right">
+                                    <div class="comment-score">
+                                        <button class="btn btn-score-up"><i class="cicon-thumbs-up"></i></button>
+                                        <span class="num">17</span>
+                                        <button class="btn btn-score-down"><i class="cicon-thumbs-down"></i></button>
+                                    </div>
+                                    <button class="btn btn-show-replies"><i class="cicon-replies"></i><span>1 reply</span></button>
+                                    <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="comment-5" class="comment" data-id="5" data-parent="4">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_jimmy_256x256.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="comment-header">
+                                <a class="comment-id" href="">#5</a>
+                                <a class="user-name" href="">Jimmy</a>
+                                <span class="comment-date">on March 2, 2016 at 17:55</span>
+                            </div>
+                            <div class="comment-content">
+                                <p><a href="">#4 @michael</a> Eh, you keep on going dawg, you hear me? And people say I'm a disgrace to society? You punk-ass bitches is done, now! </p>
+                            </div>
+                            <div class="comment-footer">
+                                <div class="comment-footer-left">
+                                    <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                                </div>
+                                <div class="comment-footer-right">
+                                    <div class="comment-score">
+                                        <button class="btn btn-score-up"><i class="cicon-thumbs-up"></i></button>
+                                        <span class="num">17</span>
+                                        <button class="btn btn-score-down"><i class="cicon-thumbs-down"></i></button>
+                                    </div>
+                                    <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="comment-6" class="comment" data-id="6" data-parent="1">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_michael_jetski_256x256.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="comment-header">
+                                <a class="comment-id" href="">#6</a>
+                                <a class="user-name" href="">Michael</a>
+                                <span class="comment-date">on March 2, 2016 at 17:57</span>
+                            </div>
+                            <div class="comment-content">
+                                <p><a href="">#1 @jimmy</a> Jimbo! I love you, son. What's up, amigo? What's going on, <a href="">@tracey</a>? </p>
+                            </div>
+                            <div class="comment-footer">
+                                <div class="comment-footer-left">
+                                    <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                                </div>
+                                <div class="comment-footer-right">
+                                    <div class="comment-score">
+                                        <button class="btn btn-score-up"><i class="cicon-thumbs-up"></i></button>
+                                        <span class="num">0</span>
+                                        <button class="btn btn-score-down"><i class="cicon-thumbs-down"></i></button>
+                                    </div>
+                                    <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="comment-7" class="comment" data-id="7" data-parent="0">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_hunt_f_256x256.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="comment-header">
+                                <a class="comment-id" href="">#7</a>
+                                <a class="user-name" href="">Franklin</a>
+                                <span class="label label-admin">ADMIN</span>
+                                <span class="comment-date">on March 2, 2016 at 18:01</span>
+                            </div>
+                            <div class="comment-content">
+                                <p>Man, your genetic experiment gone wrong, dawg!</p>
+                            </div>
+                            <div class="comment-footer">
+                                <div class="comment-footer-left">
+                                    <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                                </div>
+                                <div class="comment-footer-right">
+                                    <div class="comment-score">
+                                        <button class="btn btn-score-up"><i class="cicon-thumbs-up"></i></button>
+                                        <span class="num">8</span>
+                                        <button class="btn btn-score-down"><i class="cicon-thumbs-down"></i></button>
+                                    </div>
+                                    <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="comment-8" class="comment low" data-id="8" data-parent="0">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_trevor_atv_256x256.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="comment-header">
+                                <a class="comment-id" href="">#8</a>
+                                <a class="user-name" href="">Trevor</a>
+                                <span class="comment-date">on March 2, 2016 at 18:12</span>
+                            </div>
+                            <div class="comment-content">
+                                <p>Wanna hunt?</p>
+                                <img src="img/gta-v.jpg" />
+                                <p>How have you beeeeeeeeeen, <a href="">@amanda</a>? Wow... you are BIG! I mean, you're the size of a house!</p>
+                            </div>
+                            <div class="comment-footer">
+                                <div class="comment-footer-left">
+                                    <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                                </div>
+                                <div class="comment-footer-right">
+                                    <div class="comment-score">
+                                        <button class="btn btn-score-up"><i class="cicon-thumbs-up"></i></button>
+                                        <span class="num">-22</span>
+                                        <button class="btn btn-score-down"><i class="cicon-thumbs-down"></i></button>
+                                    </div>
+                                    <button class="btn btn-show-replies"><i class="cicon-replies"></i><span>1 reply</span></button>
+                                    <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="comment-9" class="comment" data-id="9" data-parent="8">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_frisk_me_256x256.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="comment-header">
+                                <a class="comment-id" href="">#9</a>
+                                <a class="user-name" href="">UnknownGirl89</a>
+                                <span class="comment-date">on March 2, 2016 at 18:12</span>
+                            </div>
+                            <div class="comment-content">
+                                <p><a href="">#8 @trevor</a> Can I join?</p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/W35XSzAJz2I" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="comment-footer">
+                                <div class="comment-footer-left">
+                                    <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                                </div>
+                                <div class="comment-footer-right">
+                                    <div class="comment-score">
+                                        <button class="btn btn-score-up"><i class="cicon-thumbs-up"></i></button>
+                                        <span class="num">19</span>
+                                        <button class="btn btn-score-down"><i class="cicon-thumbs-down"></i></button>
+                                    </div>
+                                    <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="new-comment comment">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <!-- Firefox can't display dashed borders on rounded elements. -->
+                                <!-- Read: https://bugzilla.mozilla.org/show_bug.cgi?id=382721 -->
+                                <object class="larger-screens" type="image/svg+xml" data="data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg'><circle cy='40' cx='40' r='38' style='fill:rgb(255, 255, 255);stroke-width:1;stroke-opacity:1;stroke:rgb(214, 214, 214);stroke-dasharray:4;' /></svg>"></object>
+                                <img src="img/v_heists_balaclava_256x256.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="anonymous-user">
+                                <div class="join">Join the conversation!</div>
+                                <div>
+                                    <a class="btn btn-sign-up" href="">New user account</a>
+                                </div>
+                                <div>
+                                    <p>Already registered?</p>
+                                    <a class="btn btn-sign-up" href="">Sign in</a>
+                                </div>
+                            </div>
+                            <div class="registered-user">
+                                <div class="comment-header">
+                                    <a class="comment-id" href=""></a>
+                                    <a class="user-name" href="">UnknownGuy84</a>
+                                    <span class="comment-date"></span>
+                                </div>
+                                <div class="comment-content">
+                                    <form name="comment-form" method="post" action="">
+                                        <textarea name="comment" placeholder="Write your comment here..."></textarea>
+                                        <div class="submit-feedback"></div>
+                                        <div class="comment-actions">
+                                            <button type="submit" class="btn">POST COMMENT</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col2">
+                <h1>Variation 2</h1>
+                <ul id="variation-2" class="comment-list" data-next-comment="10">
+                    <li id="comment-1" class="comment high" data-id="1" data-parent="0">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_jimmy_256x256.jpg" alt="">
+                            </a>
+                            <div class="comment-score">
+                                <button class="btn btn-score-up"><i class="cicon-angle-up"></i></button>
+                                <span class="num">45</span>
+                                <button class="btn btn-score-down"><i class="cicon-angle-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="comment-header">
+                                <a class="comment-id" href="">#1</a>
+                                <a class="user-name" href="">Jimmy</a>
+                                <span class="comment-date">on March 2, 2016 at 17:29</span>
+                            </div>
+                            <div class="comment-content">
+                                <p>Well, that's America for ya. No, no, really, that's fascinating. Vamos the car, amigo! Sorry, lady! Nothing personal. I know, I know, it ain't fuckin' cool! You are out of control!</p>
+                                <p>I ain't got time to swap details, asshole! Next time you'll listen. Well, you know what I mean! Hey, I'm serious. Get lost. You need receipt? For taxes? Might as well get the body bag, bro.</p>
+                            </div>
+                            <div class="comment-footer">
+                                <div class="comment-footer-left">
+                                    <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                                </div>
+                                <div class="comment-footer-right">
+                                    <button class="btn btn-show-replies"><i class="cicon-replies"></i><span>3 replies</span></button>
+                                    <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="comment-2" class="comment high" data-id="2" data-parent="0">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_tracey_256x256.jpg" alt="">
+                            </a>
+                            <div class="comment-score">
+                                <button class="btn btn-score-up"><i class="cicon-angle-up"></i></button>
+                                <span class="num">22</span>
+                                <button class="btn btn-score-down"><i class="cicon-angle-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="comment-header">
+                                <a class="comment-id" href="">#2</a>
+                                <a class="user-name" href="">Tracey</a>
+                                <span class="comment-date">on March 2, 2016 at 19:31</span>
+                            </div>
+                            <div class="comment-content">
+                                <p>Who's got eyes??!! </p>
+                                <p>Are you following me, kid? </p>
+                            </div>
+                            <div class="comment-footer">
+                                <div class="comment-footer-left">
+                                    <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                                </div>
+                                <div class="comment-footer-right">
+                                    <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="comment-3" class="comment" data-id="3" data-parent="1">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_amanda_256x256.jpg" alt="">
+                            </a>
+                            <div class="comment-score">
+                                <button class="btn btn-score-up"><i class="cicon-angle-up"></i></button>
+                                <span class="num">2</span>
+                                <button class="btn btn-score-down"><i class="cicon-angle-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="comment-header">
+                                <a class="comment-id" href="">#3</a>
+                                <a class="user-name" href="">Amanda</a>
+                                <span class="label label-moderator">MODERATOR</span>
+                                <span class="comment-date">on March 2, 2016 at 17:41</span>
+                            </div>
+                            <div class="comment-content">
+                                <p><a href="">#1 @jimmy</a> This is U.S. military airspace. Divert now, or face the consequences.</p>
+                                <p>Sir, leave the area now! This is for authorised personnel only. Drop the weapon! Oh shit, they got Charlie!</p>
+                            </div>
+                            <div class="comment-footer">
+                                <div class="comment-footer-left">
+                                    <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                                </div>
+                                <div class="comment-footer-right">
+                                    <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="comment-4" class="comment" data-id="4" data-parent="1">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_michael_jetski_256x256.jpg" alt="">
+                            </a>
+                            <div class="comment-score">
+                                <button class="btn btn-score-up"><i class="cicon-angle-up"></i></button>
+                                <span class="num">17</span>
+                                <button class="btn btn-score-down"><i class="cicon-angle-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="comment-header">
+                                <a class="comment-id" href="">#4</a>
+                                <a class="user-name" href="">Michael</a>
+                                <span class="comment-date">on March 2, 2016 at 17:52</span>
+                            </div>
+                            <div class="comment-content">
+                                <p><a href="">#1 @jimmy</a> Arrgh, Jesus! This, was a nice car! You should get some help with that personality of yours!</p>
+                            </div>
+                            <div class="comment-footer">
+                                <div class="comment-footer-left">
+                                    <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                                </div>
+                                <div class="comment-footer-right">
+                                    <button class="btn btn-show-replies"><i class="cicon-replies"></i><span>1 reply</span></button>
+                                    <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="comment-5" class="comment" data-id="5" data-parent="4">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_jimmy_256x256.jpg" alt="">
+                            </a>
+                            <div class="comment-score">
+                                <button class="btn btn-score-up"><i class="cicon-angle-up"></i></button>
+                                <span class="num">-1</span>
+                                <button class="btn btn-score-down"><i class="cicon-angle-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="comment-header">
+                                <a class="comment-id" href="">#5</a>
+                                <a class="user-name" href="">Jimmy</a>
+                                <span class="comment-date">on March 2, 2016 at 17:55</span>
+                            </div>
+                            <div class="comment-content">
+                                <p><a href="">#4 @michael</a> Eh, you keep on going dawg, you hear me? And people say I'm a disgrace to society? You punk-ass bitches is done, now! </p>
+                            </div>
+                            <div class="comment-footer">
+                                <div class="comment-footer-left">
+                                    <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                                </div>
+                                <div class="comment-footer-right">
+                                    <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="comment-6" class="comment" data-id="6" data-parent="1">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_michael_jetski_256x256.jpg" alt="">
+                            </a>
+                            <div class="comment-score">
+                                <button class="btn btn-score-up"><i class="cicon-angle-up"></i></button>
+                                <span class="num">0</span>
+                                <button class="btn btn-score-down"><i class="cicon-angle-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="comment-header">
+                                <a class="comment-id" href="">#6</a>
+                                <a class="user-name" href="">Michael</a>
+                                <span class="comment-date">on March 2, 2016 at 17:57</span>
+                            </div>
+                            <div class="comment-content">
+                                <p><a href="">#1 @jimmy</a> Jimbo! I love you, son. What's up, amigo? What's going on, <a href="">@tracey</a>? </p>
+                            </div>
+                            <div class="comment-footer">
+                                <div class="comment-footer-left">
+                                    <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                                </div>
+                                <div class="comment-footer-right">
+                                    <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="comment-7" class="comment" data-id="7" data-parent="0">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_hunt_f_256x256.jpg" alt="">
+                            </a>
+                            <div class="comment-score">
+                                <button class="btn btn-score-up"><i class="cicon-angle-up"></i></button>
+                                <span class="num">8</span>
+                                <button class="btn btn-score-down"><i class="cicon-angle-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="comment-header">
+                                <a class="comment-id" href="">#7</a>
+                                <a class="user-name" href="">Franklin</a>
+                                <span class="label label-admin">ADMIN</span>
+                                <span class="comment-date">on March 2, 2016 at 18:01</span>
+                            </div>
+                            <div class="comment-content">
+                                <p>Man, your genetic experiment gone wrong, dawg!</p>
+                            </div>
+                            <div class="comment-footer">
+                                <div class="comment-footer-left">
+                                    <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                                </div>
+                                <div class="comment-footer-right">
+                                    <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="comment-8" class="comment low" data-id="8" data-parent="0">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_trevor_atv_256x256.jpg" alt="">
+                            </a>
+                            <div class="comment-score">
+                                <button class="btn btn-score-up"><i class="cicon-angle-up"></i></button>
+                                <span class="num">-22</span>
+                                <button class="btn btn-score-down"><i class="cicon-angle-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="comment-header">
+                                <a class="comment-id" href="">#8</a>
+                                <a class="user-name" href="">Trevor</a>
+                                <span class="comment-date">on March 2, 2016 at 18:12</span>
+                            </div>
+                            <div class="comment-content">
+                                <p>Wanna hunt?</p>
+                                <img src="img/gta-v.jpg" />
+                                <p>How have you beeeeeeeeeen, <a href="">@amanda</a>? Wow... you are BIG! I mean, you're the size of a house!</p>
+                            </div>
+                            <div class="comment-footer">
+                                <div class="comment-footer-left">
+                                    <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                                </div>
+                                <div class="comment-footer-right">
+                                    <button class="btn btn-show-replies"><i class="cicon-replies"></i><span>1 reply</span></button>
+                                    <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="comment-9" class="comment" data-id="9" data-parent="8">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_frisk_me_256x256.jpg" alt="">
+                            </a>
+                            <div class="comment-score">
+                                <button class="btn btn-score-up"><i class="cicon-angle-up"></i></button>
+                                <span class="num">19</span>
+                                <button class="btn btn-score-down"><i class="cicon-angle-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="comment-header">
+                                <a class="comment-id" href="">#9</a>
+                                <a class="user-name" href="">UnknownGirl89</a>
+                                <span class="comment-date">on March 2, 2016 at 18:12</span>
+                            </div>
+                            <div class="comment-content">
+                                <p><a href="">#8 @trevor</a> Can I join?</p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/W35XSzAJz2I" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="comment-footer">
+                                <div class="comment-footer-left">
+                                    <button class="btn btn-report" title="Report"><i class="cicon-report"></i></button> 
+                                </div>
+                                <div class="comment-footer-right">
+                                    <button class="btn btn-reply"><i class="cicon-reply"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="new-comment comment">
+                        <div class="comment-lcol">
+                            <a class="user-avatar" href="">
+                                <img src="img/v_heists_balaclava_256x256.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="comment-rcol">
+                            <div class="anonymous-user">
+                                <div class="join">Join the conversation!</div>
+                                <div>
+                                    <a class="btn btn-sign-up" href="">New user account</a>
+                                </div>
+                                <div>
+                                    <p>Already registered?</p>
+                                    <a class="btn btn-sign-up" href="">Sign in</a>
+                                </div>
+                            </div>
+                            <div class="registered-user">
+                                <div class="comment-header">
+                                    <a class="comment-id" href=""></a>
+                                    <a class="user-name" href="">UnknownGuy84</a>
+                                    <span class="comment-date"></span>
+                                </div>
+                                <div class="comment-content">
+                                    <form name="comment-form" method="post" action="">
+                                        <textarea name="comment" placeholder="Write your comment here..."></textarea>
+                                        <div class="submit-feedback"></div>
+                                        <div class="comment-actions">
+                                            <button type="submit" class="btn">POST COMMENT</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="js/jquery-1.12.0.min.js"></script>
+        <script src="js/demo.js"></script>
+    </body>
+</html>

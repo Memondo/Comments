@@ -1,0 +1,193 @@
+// out: ../css/style.css, sourceMap: true
+
+@small-screen: ~"only screen and (min-width: 700px)";
+@mid-screen: ~"only screen and (min-width: 1000px)";
+@large-screen: ~"only screen and (min-width: 1160px)";
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import "comments.less";
+
+body {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pagewidth {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    
+    & > .col1,
+    & > .col2 {
+        width: 100%;
+        float: left;
+        box-sizing: border-box;
+        
+        @media @mid-screen {
+            width: 50%;
+        }
+    }
+    
+    & > .col1 {
+        padding-right: 13px;
+    }
+    
+    & > .col2 { 
+        padding-left: 13px;
+    }
+}
+
+#variation-1 {
+    .comment {
+        .comment-footer {
+            .btn {
+                span {
+                    font-size: 14px;
+                }
+                
+            }
+        }
+        
+        .comment-score {
+            display: inline-block;
+            width: 140px;
+            height: 45px;
+            line-height: 45px;
+            margin: 0;
+            text-align: right;
+            background-color: transparent;
+            
+            @media @small-screen {
+                width: 120px;
+                height: 22px;
+                line-height: 22px;
+            }
+            
+            * {
+                vertical-align: top;
+            }
+            
+            span {
+                font-weight: 700;            
+                
+                @media @small-screen {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+            }
+            
+            .btn {
+                position: relative;
+                display: inline-block;
+                width: 26px;
+                height: 26px;
+                line-height: 10px;
+                top: 8px;
+                margin: 0 2px;
+                background-color: @button-text-color;
+                border-radius: 50px;
+                
+                @media @small-screen {
+                    width: 18px;
+                    height: 18px;
+                    top: 1px;
+                    margin: 0 2px;
+                    line-height: 18px;
+                }
+                
+                i {
+                    font-size: 19px;
+                    color: #fff;
+                    
+                    @media @small-screen {
+                        //margin-top: 2px;
+                        //margin-left: 3px;
+                        font-size: 13px;
+                    }
+                }
+            }
+            
+            .btn-score-up:hover {
+                background-color: @button-up-color;
+            }
+            
+            .btn-score-down:hover {
+                background-color: @button-down-color;
+            }
+        }
+    }
+}
+
+#variation-2 {
+    .comment {
+        .comment-lcol {
+            @media @small-screen {
+                width: 80px;
+            }
+        }
+        
+        .comment-rcol {
+            &::before {
+                left: 70px;
+            }
+            
+            &::after {
+                left: 71px;
+            }
+                
+        }
+        
+        .user-avatar {
+            margin-right: 0;
+            
+            img {
+                border-radius: 0;
+            }
+        }
+        
+        .comment-score {
+            line-height: 16px;
+            
+            .btn {
+                i {
+                    position: relative;
+                    left: 1px;
+                    font-size: 18px;
+                }
+            }
+            
+            .btn-score-down {
+                i {
+                    top: -1px;
+                    
+                    @media @small-screen {
+                        top: 1px;
+                    }
+                }
+            }
+            
+            span {
+                padding-left: 2px;
+            }
+        }
+        
+        &.low {
+            .comment-rcol {
+                opacity: 1;
+            }
+            
+            .comment-content {
+                opacity: .4;
+                transition: opacity .25s;
+                
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
